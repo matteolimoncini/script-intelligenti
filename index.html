@@ -5,23 +5,58 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Script intelligenti</title>
   <style>
-    :root { --bg: #fafaf7; --fg: #1d1d1b; --muted: #6b6b66; --accent: #2b5cab; }
+    :root { --bg: #fafaf7; --fg: #1d1d1b; --muted: #6b6b66; --accent: #2a3990; --line: #e2e2dc; --card: #ffffff; }
     @media (prefers-color-scheme: dark) {
-      :root { --bg: #161615; --fg: #ecece8; --muted: #9a9a94; --accent: #7fa6e8; }
+      :root { --bg: #161615; --fg: #ecece8; --muted: #9a9a94; --accent: #8fa3e8; --line: #2e2e2c; --card: #1e1e1d; }
     }
     body { margin: 0; background: var(--bg); color: var(--fg);
            font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
     main { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
-    h1 { font-size: 2.2rem; margin: 0 0 .25em; }
-    p.sub { color: var(--muted); margin-top: 0; }
+    .kicker { color: var(--accent); font-weight: 600; font-size: .85rem;
+              letter-spacing: .06em; text-transform: uppercase; margin: 0; }
+    h1 { font-size: 2.2rem; line-height: 1.2; margin: .2em 0 .3em; }
+    p.sub { color: var(--muted); margin-top: 0; font-size: 1.1rem; }
+    h2 { font-size: 1.2rem; margin: 2.5em 0 1em; }
+    ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+    li { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px 20px; }
+    .date { color: var(--accent); font-weight: 600; font-size: .9rem; }
+    h3 { font-size: 1.1rem; margin: .15em 0 .35em; }
+    li p { margin: 0; color: var(--muted); font-size: .95rem; }
     a { color: var(--accent); }
   </style>
 </head>
 <body>
   <main>
+    <p class="kicker">Laboratorio PNRR · Liceo Galilei</p>
     <h1>Script intelligenti</h1>
-    <p class="sub">Materiali del corso di formazione – Istituto Galilei</p>
-    <p>Qui troverai schede, dataset e materiali degli incontri. Pagina in costruzione.</p>
+    <p class="sub">Sviluppare modelli di Machine Learning con il codice</p>
+
+    <h2>Gli incontri</h2>
+    <ol>
+      <li>
+        <span class="date">Incontro 1 · martedì 20 ottobre 2026</span>
+        <h3>Dalle regole agli esempi</h3>
+        <p>Intelligenza artificiale e Machine Learning, il ciclo di vita di un modello, la qualità dei dati.
+           Sfida Iris, Teachable Machine e primo notebook in Colab.</p>
+      </li>
+      <li>
+        <span class="date">Incontro 2 · martedì 27 ottobre 2026</span>
+        <h3>Classificare con il codice</h3>
+        <p>Dati di addestramento e di test, albero di decisione, accuratezza e matrice di confusione,
+           underfitting e overfitting.</p>
+      </li>
+      <li>
+        <span class="date">Incontro 3 · martedì 3 novembre 2026</span>
+        <h3>Predire e raggruppare</h3>
+        <p>Regressione, correlazione e causalità, raggruppamento con K-means.</p>
+      </li>
+      <li>
+        <span class="date">Incontro 4 · martedì 10 novembre 2026</span>
+        <h3>Il Machine Learning nel mondo reale e in classe</h3>
+        <p>Casi d'uso reali, limiti e bias, monitoraggio dei modelli nel tempo.
+           Come portare il Machine Learning nella propria materia.</p>
+      </li>
+    </ol>
   </main>
 </body>
 </html>
