@@ -4,59 +4,101 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Script intelligenti</title>
+  <meta name="description" content="Corso per docenti del Liceo Galilei di Voghera: capire il Machine Learning, provarlo con le proprie mani e portarlo in classe.">
   <style>
-    :root { --bg: #fafaf7; --fg: #1d1d1b; --muted: #6b6b66; --accent: #2a3990; --line: #e2e2dc; --card: #ffffff; }
+    :root { --bg: #fafaf7; --fg: #1d1d1b; --muted: #6b6b66; --accent: #2a3990; --accent-2: #d23369;
+            --line: #e2e2dc; --card: #ffffff; --soft: #eef1fa; }
     @media (prefers-color-scheme: dark) {
-      :root { --bg: #161615; --fg: #ecece8; --muted: #9a9a94; --accent: #8fa3e8; --line: #2e2e2c; --card: #1e1e1d; }
+      :root { --bg: #161615; --fg: #ecece8; --muted: #9a9a94; --accent: #8fa3e8; --accent-2: #ef7aa0;
+              --line: #2e2e2c; --card: #1e1e1d; --soft: #1f2233; }
     }
+    * { box-sizing: border-box; }
     body { margin: 0; background: var(--bg); color: var(--fg);
            font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
-    main { max-width: 720px; margin: 0 auto; padding: 48px 16px; }
+    main { max-width: 760px; margin: 0 auto; padding: 56px 16px 32px; }
+    a { color: var(--accent); }
     .kicker { color: var(--accent); font-weight: 600; font-size: .85rem;
               letter-spacing: .06em; text-transform: uppercase; margin: 0; }
-    h1 { font-size: 2.2rem; line-height: 1.2; margin: .2em 0 .3em; }
-    p.sub { color: var(--muted); margin-top: 0; font-size: 1.1rem; }
-    h2 { font-size: 1.2rem; margin: 2.5em 0 1em; }
-    ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
-    li { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 16px 20px; }
+    h1 { font-size: 2.4rem; line-height: 1.15; margin: .2em 0 .25em; }
+    p.sub { color: var(--muted); margin-top: 0; font-size: 1.15rem; }
+    p.lead { font-size: 1.08rem; margin: 1.4em 0 0; }
+    p.luogo { margin: .6em 0 0; color: var(--muted); }
+    h2 { font-size: 1.25rem; margin: 2.8em 0 .9em; }
+    h3 { font-size: 1.05rem; margin: .1em 0 .35em; }
+    ol.incontri { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+    ol.incontri li { background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent);
+                     border-radius: 10px; padding: 16px 20px; }
     .date { color: var(--accent); font-weight: 600; font-size: .9rem; }
-    h3 { font-size: 1.1rem; margin: .15em 0 .35em; }
-    li p { margin: 0; color: var(--muted); font-size: .95rem; }
-    a { color: var(--accent); }
+    ol.incontri p { margin: 0; color: var(--muted); font-size: .95rem; }
+    .materiali { display: inline-block; margin-top: .6em; font-size: .9rem; font-weight: 600; }
+    .presto { display: inline-block; margin-top: .6em; font-size: .85rem; color: var(--muted); }
+    .bio { display: grid; gap: 4px; }
+    .bio p { margin: 0; }
+    .bio .role { color: var(--muted); }
+    footer { border-top: 1px solid var(--line); margin-top: 3.5em; padding-top: 1.4em; font-size: .9rem;
+             color: var(--muted); }
+    footer p { margin: .35em 0; }
   </style>
 </head>
 <body>
   <main>
-    <p class="kicker">Laboratorio PNRR · Liceo Galilei</p>
+    <p class="kicker">Corso per docenti</p>
     <h1>Script intelligenti</h1>
     <p class="sub">Sviluppare modelli di Machine Learning con il codice</p>
+    <p class="lead">Un percorso in quattro incontri sul Machine Learning: come funziona, come si costruisce un modello
+      e come portarlo nelle proprie classi.</p>
+    <p class="luogo"><strong>Luogo:</strong> Istituto di Istruzione Superiore Galileo Galilei, via Foscolo 15,
+      Voghera</p>
+    <p class="luogo"><strong>Aula:</strong> TBD</p>
+
+    <h2>Prima del corso</h2>
+    <p>Compila il questionario: <a href="https://forms.gle/NzXNAXRZ4MxvWZmn8">forms.gle/NzXNAXRZ4MxvWZmn8</a></p>
 
     <h2>Gli incontri</h2>
-    <ol>
+    <ol class="incontri">
       <li>
-        <span class="date">Incontro 1 · martedì 20 ottobre 2026</span>
+        <span class="date">Incontro 1 · martedì 27 ottobre 2026</span>
         <h3>Dalle regole agli esempi</h3>
-        <p>Intelligenza artificiale e Machine Learning, il ciclo di vita di un modello, la qualità dei dati.
-           Sfida Iris, Teachable Machine e primo notebook in Colab.</p>
+        <p>Intelligenza artificiale e Machine Learning, dataset, feature e label, il ciclo di vita di un modello, la
+           qualità dei dati. Si prova con i fiori di iris, Teachable Machine e un primo notebook in Colab.</p>
+        <a class="materiali" href="incontro-1/">Materiali dell'incontro →</a>
       </li>
       <li>
-        <span class="date">Incontro 2 · martedì 27 ottobre 2026</span>
+        <span class="date">Incontro 2 · martedì 3 novembre 2026</span>
         <h3>Classificare con il codice</h3>
-        <p>Dati di addestramento e di test, albero di decisione, accuratezza e matrice di confusione,
-           underfitting e overfitting.</p>
+        <p>Dati di addestramento e di test, albero di decisione e vicini più vicini (KNN), accuratezza e matrice di
+           confusione, underfitting e overfitting.</p>
+        <span class="presto">Materiali disponibili dopo l'incontro</span>
       </li>
       <li>
-        <span class="date">Incontro 3 · martedì 3 novembre 2026</span>
+        <span class="date">Incontro 3 · martedì 10 novembre 2026</span>
         <h3>Predire e raggruppare</h3>
         <p>Regressione, correlazione e causalità, raggruppamento con K-means.</p>
+        <span class="presto">Materiali disponibili dopo l'incontro</span>
       </li>
       <li>
-        <span class="date">Incontro 4 · martedì 10 novembre 2026</span>
+        <span class="date">Incontro 4 · martedì 17 novembre 2026</span>
         <h3>Il Machine Learning nel mondo reale e in classe</h3>
-        <p>Casi d'uso reali, limiti e bias, monitoraggio dei modelli nel tempo.
-           Come portare il Machine Learning nella propria materia.</p>
+        <p>Casi d'uso reali, limiti e bias, monitoraggio dei modelli nel tempo. Come portare il Machine Learning
+           nella propria materia.</p>
+        <span class="presto">Materiali disponibili dopo l'incontro</span>
       </li>
     </ol>
+
+    <h2>Chi tiene il corso</h2>
+    <div class="bio">
+      <p><strong>Matteo Limoncini</strong></p>
+      <p class="role">Senior Data Scientist e Machine Learning Engineer</p>
+      <p>Progetta, sviluppa e mette in produzione sistemi di intelligenza artificiale. Laurea magistrale in
+         Informatica all'Università degli Studi di Milano, con un interesse particolare per la didattica
+         dell'informatica.</p>
+    </div>
+
+    <footer>
+      <p>Domande, dubbi o idee per la tua classe? Scrivimi a
+         <a href="mailto:limoncinimatteo@gmail.com">limoncinimatteo@gmail.com</a>.</p>
+      <p>Materiali per uso didattico. Le immagini e i dataset riportano fonti e licenze nei singoli kit.</p>
+    </footer>
   </main>
 </body>
 </html>
