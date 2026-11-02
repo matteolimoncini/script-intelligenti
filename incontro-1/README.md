@@ -1,6 +1,6 @@
 # Incontro 1 · Dalle regole agli esempi
 
-**Script intelligenti: sviluppare modelli di Machine Learning con il codice** · martedì 27 ottobre 2026
+**Script intelligenti: sviluppare modelli di Machine Learning con il codice** · martedì 3 novembre 2026
 
 Il kit dell'incontro: tre attività da rifare in classe, ognuna con i materiali per gli studenti e una guida per il
 docente. Tempi indicativi in classe: da 30 a 60 minuti per attività.
