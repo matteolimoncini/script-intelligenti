@@ -22,14 +22,14 @@ apposta: pochi esempi, sfondo truccato, classi sbilanciate. Niente webcam e nien
 
 | File | A che cosa serve |
 |---|---|
-| [immagini_frutta.zip](teachable_machine/immagini_frutta.zip) | Le 372 foto, divise nelle cartelle dei tre esperimenti più la cartella `prova` (6 MB) |
+| [immagini_frutta.zip](teachable_machine/immagini_frutta.zip) | Le 371 foto: i dati buoni, le cartelle dei tre esperimenti e la cartella `prova` (6 MB) |
 | [teachable_machine_consegne.pdf](schede/teachable_machine_consegne.pdf) | Le consegne da stampare, una per coppia |
 | [teachable_machine_guida_docente.pdf](schede/teachable_machine_guida_docente.pdf) | Tempi, che cosa aspettarsi, intoppi frequenti, varianti, privacy |
 
 Lo strumento: [teachablemachine.withgoogle.com](https://teachablemachine.withgoogle.com) → Inizia → Progetto di
 immagini → Modello di immagine standard.
 
-## 3 · Esploriamo Iris con Gemini (vibecoding in Colab)
+## 3 · Esploriamo Iris con Gemini (AI-assisted coding in Colab)
 
 Il codice lo scrive Gemini, l'assistente di Google Colab: noi chiediamo bene e controlliamo il risultato. Due tappe:
 caricare ed esplorare i dati, poi un grafico e una domanda.
